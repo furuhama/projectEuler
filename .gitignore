@@ -1,2 +1,8 @@
 # gitignore file
 
+# golang
+bin
+pkg
+src/github.com
+src/honnef.co
+
