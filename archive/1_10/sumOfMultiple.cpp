@@ -1,3 +1,5 @@
+/* copyright furuhama 2017 */
+
 #include <iostream>
 
 int main() {
@@ -9,14 +11,11 @@ int main() {
     for (int i = 1; i < max; i++) {
         if (i % (a * b) == 0) {
             sum += i;
-        }
-        else if ((i % a) == 0) {
+        } else if ((i % a) == 0) {
             sum += i;
-        }
-        else if ((i % b) == 0) {
+        } else if ((i % b) == 0) {
             sum += i;
         }
     }
     std::cout << sum << std::endl;
 }
-
