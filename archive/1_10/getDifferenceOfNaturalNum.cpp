@@ -1,5 +1,7 @@
 /* copyright furuhama 2017 */
 
+// this is a code for Project Euler No.6
+
 #include <iostream>
 
 int getSquareOfNaturalNum(int max) {

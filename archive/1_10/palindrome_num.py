@@ -1,4 +1,4 @@
-""" Project Euler Q.4 """
+""" this is a code for Project Euler No.4 """
 
 from math import sqrt
 

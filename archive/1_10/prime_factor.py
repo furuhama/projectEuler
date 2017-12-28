@@ -1,4 +1,5 @@
-import math
+""" this is a code for Project Euler No.3 """
+
 
 def get_prime_factor(num):
     num = int(num)
@@ -15,8 +16,8 @@ def get_prime_factor(num):
                 next
         get_prime_factor(num / (i + 1))
 
-if __name__ == '__main__' :
+
+if __name__ == '__main__':
     n = int(input())
 
     get_prime_factor(n)
-

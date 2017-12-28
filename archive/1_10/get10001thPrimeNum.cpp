@@ -1,4 +1,7 @@
 /* Copyright 2017 furuhama */
+
+// this is a code for Project Euler No.7
+
 #include <iostream>
 #include <cmath>
 #define SIZE 10001

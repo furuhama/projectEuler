@@ -2,6 +2,8 @@ package main
 
 import "fmt"
 
+// this is a code for Project Euler No.5
+
 func getSmallestMultiple(x, y int) int {
 	gcd := getGreatestCommonDivisor(x, y)
 	return x * y / gcd

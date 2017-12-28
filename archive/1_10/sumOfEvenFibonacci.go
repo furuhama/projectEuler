@@ -2,6 +2,8 @@ package main
 
 import "fmt"
 
+// this is a code for Project Euler No.2
+
 // updateFibonacci gets slice
 // it appends a next fibonacci number to the last
 // it returns slice

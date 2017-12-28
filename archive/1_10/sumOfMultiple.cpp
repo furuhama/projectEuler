@@ -1,4 +1,5 @@
 /* copyright furuhama 2017 */
+/* this is a code for Project Euler No.1 */
 
 #include <iostream>
 
