@@ -20,11 +20,11 @@ def search_6digits_number():
         for second in other_digit:
             for third in other_digit:
                 target = top * 100001 + second * 10010 + third * 1100
-                result = search_3digits_divider(target)
+                result = search_3digits_divider(int(target))
 
                 if result != 0:
                     print(result)
-                    return search_3digits_divider(target)
+                    return result
 
     return 0
 
@@ -49,10 +49,12 @@ def search_5digits_number():
 def search_3digits_divider(num):
     maximum = int(sqrt(num))
 
-    for i in range(100, maximum + 1):
-        if num % i == 0 and (num / i) >= 100 and (num / i) <= maximum:
-            print(i, "times", (num / i), "equals", num)
-            return num
+    for i in range(100, maximum + 2):
+        if num % i == 0:
+            divider = int(num / i)
+            if len(str(divider)) < 4:
+                print(i, "times", (num / i), "equals", num)
+                return i
 
     return 0
 
