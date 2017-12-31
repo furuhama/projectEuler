@@ -1,6 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strconv"
+	"unicode/utf8"
+)
 
 const (
 	givenNumber string = `73167176531330624919225119674426574742355349194934
@@ -25,6 +29,43 @@ const (
 71636269561882670428252483600823257530420752963450`
 )
 
+func makeProdFromString(s string) int {
+	resultProd := 1
+	for i := 0; i < len(s); i++ {
+		tmp, err := strconv.Atoi(s[i : i+1])
+		if err != nil {
+			tmp = 1
+		}
+		resultProd = resultProd * tmp
+	}
+	return resultProd
+}
+
+func get13strings(s string, startPoint int) string {
+	if (startPoint % 51) > 37 {
+		if startPoint%51 == 50 {
+			return s[startPoint+1 : startPoint+14]
+		} else {
+			return s[startPoint:startPoint+50-startPoint%51] + s[startPoint+51-startPoint%51:startPoint+14]
+		}
+	} else {
+		return s[startPoint : startPoint+13]
+	}
+}
+
+func searchMaxAdjacentProd(s string) int {
+	length := utf8.RuneCountInString(givenNumber)
+	maxProd := 0
+	for i := 0; i < (length - 14); i++ {
+		targetStr := get13strings(s, i)
+		resultProd := makeProdFromString(targetStr)
+		if resultProd > maxProd {
+			maxProd = resultProd
+		}
+	}
+	return maxProd
+}
+
 func main() {
-	fmt.Println(givenNumber)
+	fmt.Println("the answer is: ", searchMaxAdjacentProd(givenNumber))
 }
