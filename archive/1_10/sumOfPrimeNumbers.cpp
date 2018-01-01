@@ -3,6 +3,7 @@
 #include <iostream>
 #include <cmath>
 #define N 2000000
+using llong = int64_t;
 
 void Eratosthenes(int n, int *arr) {
   for (int i = 0; i < n; i++) {
@@ -21,7 +22,7 @@ int main() {
     int arr[N];
     Eratosthenes(N, arr);
     // should use long type (instead of int)
-    long sumOfPrimes = 0;
+    llong sumOfPrimes = 0;
     for (int i = 2; i < N; i++) {
         if (arr[i] == 1) {
             sumOfPrimes = sumOfPrimes + i;
