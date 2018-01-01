@@ -1,5 +1,7 @@
 /* Copyright 2017 furuhama */
 
+// this is a code for Project Euler q.10
+
 #include <iostream>
 #include <cmath>
 #define N 2000000
