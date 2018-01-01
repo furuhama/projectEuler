@@ -21,7 +21,7 @@ void Eratosthenes(int n, int *arr) {
 int main() {
     int arr[N];
     Eratosthenes(N, arr);
-    // should use long type (instead of int)
+    // should use llong type (instead of int)
     llong sumOfPrimes = 0;
     for (int i = 2; i < N; i++) {
         if (arr[i] == 1) {
