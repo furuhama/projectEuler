@@ -112,10 +112,14 @@ const (
 )
 
 func addLargeNumbers(numList []string) *big.Int {
+	// use big.Int (for escape overflow in uint64 type)
 	result := big.NewInt(0)
 	for i := 0; i < len(numList); i++ {
+		// set a big.Int instance named target
 		target := new(big.Int)
+		// SetString returns (*big.Int, bool)
 		target, ok := target.SetString(numList[i], 10)
+		// catch an error
 		if ok == false {
 			fmt.Println("an error occured!")
 			return big.NewInt(0)
