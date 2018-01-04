@@ -1,5 +1,4 @@
 # this is a code for Project Euler q.17
-# THIS CODE IS NOT CORRECT!!!
 
 def convertNumberToLetter(num_int)
   letter_high = getLetterOver99(num_int/100)
@@ -74,7 +73,7 @@ def getLetterUnder100(num)
   when 3
     result += "thirty"
   when 4
-    result += "fourty"
+    result += "forty"
   when 5
     result += "fifty"
   when 6
@@ -116,9 +115,8 @@ end
 
 if __FILE__ == $0
   count = 0
-  (890..900).each {|num|
+  (1..1000).each {|num|
     count += convertNumberToLetter(num).length
-    p convertNumberToLetter(num)
   }
   p count
 end
