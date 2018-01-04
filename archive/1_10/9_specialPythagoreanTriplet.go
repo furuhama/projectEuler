@@ -1,4 +1,4 @@
-// this is a code for Project Euler No.5
+// this is a code for Project Euler No.9
 
 package main
 
