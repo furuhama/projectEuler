@@ -7,6 +7,10 @@ import (
 	"time"
 )
 
+// it is not good to use "date" package for this question,
+// however it is too hard to implement them all by myself
+// (and, many modern programming languages have their own datetime package
+// we almost never implement them by ourselves)
 func countSundays() int {
 	counter := 0
 	var weekday time.Weekday
