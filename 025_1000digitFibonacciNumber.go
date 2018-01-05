@@ -1,3 +1,5 @@
+// this is a code for Project Euler q.25
+
 package main
 
 import (
