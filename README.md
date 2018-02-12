@@ -1,6 +1,6 @@
 # ProjectEuler
 
-### about
+## about
 
 For my [Project Euler](https://projecteuler.net/archives) answers
 
