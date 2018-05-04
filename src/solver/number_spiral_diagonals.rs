@@ -1,6 +1,8 @@
 // problem no.28
 
 const SIZE: u64 = (1001 - 1) / 2;
+
+// for test case
 // const SIZE: u64 = 2;
 
 fn sum_center_right_up(size: u64) -> u64 {
