@@ -8,3 +8,6 @@ src/honnef.co
 
 # rust
 target
+
+# ruby
+.bundle
