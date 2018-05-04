@@ -6,3 +6,5 @@ pkg
 src/github.com
 src/honnef.co
 
+# rust
+target
