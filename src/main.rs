@@ -4,5 +4,5 @@ use project_euler::solver;
 
 fn main() {
     println!("Hello, project euler!");
-    println!("{}", solver::number_spiral_diagonals_028::solver());
+    println!("{}", solver::distinct_powers_029::solver());
 }
