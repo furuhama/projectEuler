@@ -52,8 +52,9 @@ fn answer_vec() -> Vec<u32> {
     ans
 }
 
-pub fn solver() -> u32 {
-    answer_vec().iter().fold(0, |acc, x| acc + x)
+fn main() {
+    let ans = answer_vec().iter().fold(0, |acc, x| acc + x);
+    println!("{}", ans);
 }
 
 #[test]
