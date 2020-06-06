@@ -30,6 +30,8 @@ fn sum_left_up(size: u64) -> u64 {
         .fold(0, |acc, x| acc + x)
 }
 
-pub fn solver() -> u64 {
-    sum_center_right_up(SIZE) + sum_right_down(SIZE) + sum_left_down(SIZE) + sum_left_up(SIZE)
+fn main() {
+    let ans = sum_center_right_up(SIZE) + sum_right_down(SIZE) + sum_left_down(SIZE) + sum_left_up(SIZE);
+
+    println!("{}", ans);
 }
