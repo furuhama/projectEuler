@@ -18,6 +18,8 @@ fn distinct_numbers(numbers: u32, size: u32) -> u32 {
     distincts
 }
 
-pub fn solver() -> u32 {
-    distinct_numbers(4, 10)
+fn main() {
+    let ans = distinct_numbers(4, 10);
+
+    println!("{}", ans);
 }
